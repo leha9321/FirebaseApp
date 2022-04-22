@@ -12,7 +12,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIScrollView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -68,6 +68,10 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tka-yF-5oj"/>
+                                                    <segue destination="MWN-2Z-JeM" kind="show" id="r7F-Oa-AXs"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIS-YH-Ldz">
                                                 <rect key="frame" x="0.0" y="64" width="254" height="44"/>
@@ -76,6 +80,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="registerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wkT-j2-Tpg"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -105,19 +112,24 @@
                             <constraint firstItem="wuf-Ca-mZH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vq3-NB-1ET"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="zqN-6G-cCg" id="jOp-Ew-At3"/>
+                        <outlet property="passwordTextField" destination="AgR-TD-Rdm" id="gZs-Sr-mIm"/>
+                        <outlet property="warningLabel" destination="xGI-rs-h5N" id="6T2-Fu-esr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-10.144927536231885" y="63.616071428571423"/>
         </scene>
-        <!--Task Table View Controller-->
+        <!--Tasks-->
         <scene sceneID="lf7-rh-Gzy">
             <objects>
                 <tableViewController id="cXC-Id-bbD" customClass="TaskTableViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="vKo-j3-hqQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.88106718417983032" blue="0.66312648413816555" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="aUT-JF-QDi">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
@@ -134,8 +146,12 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="jRk-G3-0h7">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Tya-Rx-eEe"/>
+                    <navigationItem key="navigationItem" title="Tasks" id="jRk-G3-0h7">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Tya-Rx-eEe">
+                            <connections>
+                                <action selector="addTapped:" destination="cXC-Id-bbD" id="4O1-ec-3ja"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
@@ -148,8 +164,9 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MWN-2Z-JeM" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="HZB-VE-6of"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3rR-a7-Hbn">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
