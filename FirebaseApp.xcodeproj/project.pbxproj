@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		DE9FCB822812F25B009C6437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9FCB812812F25B009C6437 /* AppDelegate.swift */; };
 		DE9FCB842812F25B009C6437 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9FCB832812F25B009C6437 /* SceneDelegate.swift */; };
-		DE9FCB862812F25B009C6437 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9FCB852812F25B009C6437 /* ViewController.swift */; };
+		DE9FCB862812F25B009C6437 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9FCB852812F25B009C6437 /* LoginViewController.swift */; };
 		DE9FCB892812F25B009C6437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9FCB872812F25B009C6437 /* Main.storyboard */; };
 		DE9FCB8B2812F25D009C6437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9FCB8A2812F25D009C6437 /* Assets.xcassets */; };
 		DE9FCB8E2812F25D009C6437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9FCB8C2812F25D009C6437 /* LaunchScreen.storyboard */; };
+		DE9FCB962812F87B009C6437 /* TaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9FCB952812F87B009C6437 /* TaskTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE9FCB7E2812F25B009C6437 /* FirebaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9FCB812812F25B009C6437 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE9FCB832812F25B009C6437 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE9FCB852812F25B009C6437 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE9FCB852812F25B009C6437 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DE9FCB882812F25B009C6437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE9FCB8A2812F25D009C6437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE9FCB8D2812F25D009C6437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE9FCB8F2812F25D009C6437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE9FCB952812F87B009C6437 /* TaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				DE9FCB812812F25B009C6437 /* AppDelegate.swift */,
 				DE9FCB832812F25B009C6437 /* SceneDelegate.swift */,
-				DE9FCB852812F25B009C6437 /* ViewController.swift */,
+				DE9FCB952812F87B009C6437 /* TaskTableViewController.swift */,
+				DE9FCB852812F25B009C6437 /* LoginViewController.swift */,
 				DE9FCB872812F25B009C6437 /* Main.storyboard */,
 				DE9FCB8A2812F25D009C6437 /* Assets.xcassets */,
 				DE9FCB8C2812F25D009C6437 /* LaunchScreen.storyboard */,
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE9FCB862812F25B009C6437 /* ViewController.swift in Sources */,
+				DE9FCB862812F25B009C6437 /* LoginViewController.swift in Sources */,
 				DE9FCB822812F25B009C6437 /* AppDelegate.swift in Sources */,
+				DE9FCB962812F87B009C6437 /* TaskTableViewController.swift in Sources */,
 				DE9FCB842812F25B009C6437 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
