@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9716CCE161F0C5198C4CBA70 /* Pods_FirebaseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53DD5CCD6CA74C9B30AF70F /* Pods_FirebaseApp.framework */; };
+		DE33521B2819DBBD00D41D82 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE33521A2819DBBD00D41D82 /* Task.swift */; };
+		DE33521D2819DBCC00D41D82 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE33521C2819DBCC00D41D82 /* Users.swift */; };
 		DE9FCB822812F25B009C6437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9FCB812812F25B009C6437 /* AppDelegate.swift */; };
 		DE9FCB842812F25B009C6437 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9FCB832812F25B009C6437 /* SceneDelegate.swift */; };
 		DE9FCB862812F25B009C6437 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9FCB852812F25B009C6437 /* LoginViewController.swift */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		9C8BD7E5227DEF73995AC73A /* Pods-FirebaseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseApp.release.xcconfig"; path = "Target Support Files/Pods-FirebaseApp/Pods-FirebaseApp.release.xcconfig"; sourceTree = "<group>"; };
 		B53DD5CCD6CA74C9B30AF70F /* Pods_FirebaseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE33521A2819DBBD00D41D82 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		DE33521C2819DBCC00D41D82 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		DE9FCB7E2812F25B009C6437 /* FirebaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9FCB812812F25B009C6437 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE9FCB832812F25B009C6437 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +56,6 @@
 				E308ED4B6A677AD677F112D2 /* Pods-FirebaseApp.debug.xcconfig */,
 				9C8BD7E5227DEF73995AC73A /* Pods-FirebaseApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,6 +91,8 @@
 				DE9FCB812812F25B009C6437 /* AppDelegate.swift */,
 				DE9FCB832812F25B009C6437 /* SceneDelegate.swift */,
 				DE9FCB952812F87B009C6437 /* TaskTableViewController.swift */,
+				DE33521A2819DBBD00D41D82 /* Task.swift */,
+				DE33521C2819DBCC00D41D82 /* Users.swift */,
 				DE9FCB852812F25B009C6437 /* LoginViewController.swift */,
 				DE9FCB872812F25B009C6437 /* Main.storyboard */,
 				DE9FCB8A2812F25D009C6437 /* Assets.xcassets */,
@@ -216,6 +221,8 @@
 			files = (
 				DE9FCB862812F25B009C6437 /* LoginViewController.swift in Sources */,
 				DE9FCB822812F25B009C6437 /* AppDelegate.swift in Sources */,
+				DE33521D2819DBCC00D41D82 /* Users.swift in Sources */,
+				DE33521B2819DBBD00D41D82 /* Task.swift in Sources */,
 				DE9FCB962812F87B009C6437 /* TaskTableViewController.swift in Sources */,
 				DE9FCB842812F25B009C6437 /* SceneDelegate.swift in Sources */,
 			);
