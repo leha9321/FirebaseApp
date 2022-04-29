@@ -39,7 +39,7 @@ class LoginViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         emailTextField.text = ""
-        passwordTextField.text = "" 
+        passwordTextField.text = ""
     }
     
     @objc func kbDidShow(notification: Notification) {
@@ -84,16 +84,18 @@ class LoginViewController: UIViewController {
         guard let email = emailTextField.text, let password = passwordTextField.text, email != "", password != "" else {
             displayWarningLabel(withText: "Info is incorrect")
             return
-    }
+        }
         Auth.auth().createUser(withEmail: email , password: password) { [weak self] (user, error) in
-           
+            
             guard error == nil, user != nil else {
                 print(error!.localizedDescription)
                 return
             }
-            let userRef = self?.ref.child(user!.user.uid)
-            userRef?.setValue(["email": user!.user.email])
+            let userRef = self?.ref.child((user?.user.uid)!)
+            userRef?.setValue(["email": user?.user.email])
+       
         }
     }
 }
+
 

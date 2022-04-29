@@ -143,6 +143,7 @@
                         <connections>
                             <outlet property="dataSource" destination="cXC-Id-bbD" id="Lgd-H7-Ehh"/>
                             <outlet property="delegate" destination="cXC-Id-bbD" id="PMG-Lb-3V2"/>
+                            <outlet property="prefetchDataSource" destination="cXC-Id-bbD" id="HpP-iH-j1P"/>
                         </connections>
                     </tableView>
                     <toolbarItems/>
